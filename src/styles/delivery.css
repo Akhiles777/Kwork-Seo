@@ -1,0 +1,826 @@
+.delivery {
+  background: #fff;
+}
+
+.delivery-header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 91%;
+    height: 28px;
+    margin: 0 auto;
+  }
+
+  .delivery-footer {
+    padding-top: 3vh;
+  }
+
+
+.home-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: flex-end; /* ⬅ справа */
+  align-items: stretch;
+  z-index: 2000;
+}
+
+.home-modal {
+  background: rgb(245, 243, 236);
+  width: 32vw;
+  height: 100%;
+  padding: 25px;
+  box-shadow: -6px 0 30px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-modal-list li {
+display: flex;
+margin: 0 auto;
+}
+
+.home-modal-list li a {
+  font-size: 14px;
+  line-height: 1.7;
+  display: flex;
+margin: 0 auto;
+}
+
+.home-modal-list li button {
+  font-size: 14px;
+  line-height: 1.7;
+  padding-left: 5%;
+  display: flex;
+margin: 0 auto;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.home-modal-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.story-content p {
+  font-size: 13px;
+  font-weight: 300;
+} 
+
+.home-modal-list li {
+  margin-bottom: 12px;
+}
+
+.home-modal-list a,
+.home-modal-list button {
+  font-size: 18px;
+  color: #3b3b13;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.home-third-block-text-ul li {
+  font-size: 9px;
+  padding-top: 5px;
+}
+
+.home-modal-close {
+  margin-top: 10px;
+  margin-left: 5%;
+  padding: 10px;
+  width: 90%;
+  background: none;
+  color: #3b3b13;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+  
+.delivery-header-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 9px;
+  color: #7f7a65;
+  font-weight: 300;
+  width: 40%;
+  margin-top: 0.1%;
+  margin-right: 3%;
+  transform: scaleY(0.95);
+  list-style: none;
+  }
+
+  .delivery-header-links li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 9px;
+    color: #7f7a65;
+    font-weight: 300;
+    width: 40%;
+    margin-top: 0.9%;
+    margin-right: 3%;
+    transform: scaleY(0.95);
+    list-style: none;
+    }
+
+  .delivery-header-links button {
+    font-weight: 300;
+    font-size: 9px;
+    color: #a0a09b;
+  }
+  
+.delivery-header {
+  height: 28px;
+  margin-bottom: 0.7%;
+}
+
+  .beeDelivery {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+  } 
+
+  .beeDelivery img{
+    margin: 0 auto;
+    width: 42%;
+  }
+
+  .delivery-info {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto 1%;
+  }
+
+  .delivery-info-up {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin-top: 3%;
+  }
+
+  .delivery-info-buttom {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    margin-top: 9%;
+  }
+
+  .phone-contact {
+    display: flex;
+    padding-top: 1%;
+  }
+
+  .delivery-info-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 3%;
+  }
+
+  .delivery-info-up img {
+    width: 4%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .delivery-info-buttom img {
+    width: 4%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .delivery-logo-header::before,
+  .delivery-logo-header::after {
+    content: none; /* убираем любые псевдоэлементы */
+  }
+
+  .delivery-logo-header {
+    width: 93px;
+    height: 53px;
+    z-index: 50;
+  }
+
+  .delivery-logo-header img {
+    width: 18px;
+    height: 29px;
+  }
+
+  .delivery-burger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; 
+    align-items: center;
+    width: 130px;
+    height: 25px;
+  }
+
+  .delivery-burger img {
+    width: 31px;
+    height: 14px;
+  }
+
+  .story-content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .delivery-fourth-block {
+    position: relative;
+    width: 100vw; 
+    height: 22vh;   
+    margin-left: calc(-50vw + 50%); 
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 0;
+    background-size: cover;     
+    background-position: center;
+    margin-top: -0.6%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .delivery-story-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    color: white;
+  }
+
+  .delivery-story-content h4 {
+    font-size: 11px;
+    font-weight: 300;  
+     opacity: 0.7;
+  }
+
+  .delivery-story-content h3 {
+    font-size: 26px;
+    font-weight: 300;
+  }
+
+  .delivery-story-content p {
+    font-size: 11px;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+
+  .delivery-fourth-block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 0;
+  }
+  
+  .logo-header-li {
+    list-style: none;
+  }
+  
+  .delivery-fourth-block > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+    .delivery-fourth-block .story-content {
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      
+    }
+    
+    .phone-contact {
+      color: #edae00;
+      gap: 2%;
+    }
+
+    .arrow-address {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .delivery-info-h2-p h2 {
+      font-size: 17px;
+      font-weight: 500;
+      color: #141105;
+    }
+
+    .delivery-info-h2-p p {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #6c6c69;
+    }
+
+  @media (min-width: 1920px) {
+    .delivery-header-links {
+      font-size: 0.7rem;
+    }
+    
+    .delivery-header-links button {
+      font-size: 0.7rem;
+    }
+  }
+
+@media (min-width: 1700px) {
+  .delivery-logo-header {
+    width: 10%;
+    z-index: 50;
+  }
+
+  .delivery-fourth-block {
+    height: 28vh;
+  }
+
+  .delivery-story-content {
+    margin-top: 1%;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 1.3rem;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 1rem;
+  }
+
+  .delivery-info {
+    width: 46%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .delivery-info-h2-p h2 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  
+}
+
+@media (max-width: 1300px) {
+  .delivery-story-content h4 {
+    font-size: 0.66rem;
+  }
+
+  .delivery-story-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .delivery-story-content p {
+    font-size: 0.66rem;
+    font-weight: 300;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.95rem;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.75rem;
+  }
+
+
+
+  .delivery-story-content {
+    line-height: 1.8;
+  }
+
+  .delivery-info {
+    width: 63%;
+    margin: 8% auto 8%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .story-content h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }  
+
+  .delivery-story-content h4 {
+    font-size: 0.65rem;
+  }
+
+  .delivery-story-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .delivery-story-content p {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .delivery-story-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .delivery-story-content p {
+    font-size: 0.6rem;
+  }
+
+  .delivery-story-content h4 {
+    font-size: 0.55rem;
+    margin-top: 4%;
+  }
+
+  .delivery-story-content {
+    margin-top: -2%;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.9rem;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.55rem;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.8rem;
+  }
+
+  .beeDelivery img{
+    margin: 0 auto;
+    width: 47%;
+  }
+
+  .delivery-logo-header {
+    margin-left: 5%;
+  }
+
+  .delivery-story-content {
+    line-height: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .delivery-burger {
+    display: block;
+    justify-content: end;
+    margin-right: -4%;
+    margin-top: 0.6%;
+  }
+
+  .delivery-info {
+    width: 63%;
+    margin: 11% auto 11%;
+  }
+
+  .delivery-story-content p {
+    font-size: 0.6rem;
+  }
+
+  .delivery-story-content {
+    width: 64%;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.8rem;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.55rem;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.8rem;
+  }
+
+  .delivery-header-links {
+    display: none;;
+  }
+
+  .delivery-header-content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 800px) {
+  .delivery-burger img {
+    margin-top: 1%;
+  }
+
+  .delivery-story-content h3 {
+    font-size: 1rem;
+  }
+
+  .delivery-story-content p {
+    font-size: 0.45rem;
+  }
+
+  .delivery-story-content h4 {
+    font-size: 0.45rem;
+    margin-top: 7%;
+  }
+
+  .delivery-story-content {
+    width: 68%;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.8rem;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.5rem;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.74rem;
+  }
+
+  .delivery-info {
+    width: 65%;
+    margin: 15% auto 15%;
+  }
+
+  .beeDelivery {
+    margin-top: 4%;
+  } 
+}
+
+@media (max-width: 700px) {
+  .delivery-info-h2-p h2 {
+    font-size: 0.7rem;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.47rem;
+  }
+
+  .delivery-header {
+    height: 30px;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.7rem;
+  }
+
+  .delivery-info {
+    margin-bottom: 22%;
+    margin-top: 22%;
+  }
+
+  .beeDelivery img{
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .delivery-info-up, .delivery-info-buttom {
+    margin-top: 6%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .delivery-story-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .delivery-story-content {
+    width: 70%;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.49rem;
+  }
+  
+  .beeDelivery {
+    margin-top: 12%;
+  }
+
+  .delivery-info {
+    margin-bottom: 23%;
+    margin-top: 23%;
+    width: 67%;
+  }
+
+  .delivery-info-h2-p h2 {
+    font-size: 0.7rem;
+  }
+
+  .delivery-info-h2-p p {
+    font-size: 0.45rem;
+  }
+
+  .delivery-burger {
+    display: block;
+    justify-content: end;
+    margin-right: 0%;
+    margin-top: 1%;
+    width: 60px;
+  }
+
+  .home-modal {
+    width: 42vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .story-content h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  } 
+
+  .home-modal {
+    width: 55vw;
+  }
+
+  .delivery-story-content h3 {
+    font-size: 0.8rem;
+  }
+
+  .delivery-story-content {
+    width: 80%;
+  }
+  .delivery-story-content {
+    margin-top: -6%;
+  }
+  .delivery-fourth-block {
+    height: 18vh;
+    margin-top: -1%;
+  }
+
+  .delivery-info {
+    width: 74%;
+  }
+
+  .delivery-burger {
+    width: 50px;
+}
+
+  .beeDelivery {
+    margin-top: 18%;
+  }
+
+  .delivery-info {
+    margin-bottom: 33%;
+    margin-top: 33%;
+  }
+
+  .beeDelivery img{
+    margin: 0 auto;
+    width: 58%;
+  }
+
+  .delivery-header {
+   height: 32px;
+  }
+}
+
+@media (max-width: 450px) {
+  .delivery-burger {
+    margin-top: 1.6%;
+}
+
+.home-burger {
+  width: 24%;
+}
+
+.delivery-burger img {
+  width: 30px;
+  height: 13px;
+}
+}
+
+@media (max-width: 400px) {
+  .story-content h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }  
+
+  .delivery-story-content h3 {
+    font-size: 0.65rem;
+  }
+
+  .delivery-story-content p {
+    font-size: 0.4rem;
+  }
+
+  .delivery-story-content h4 {
+    font-size: 0.4rem;
+    margin-top: 8%;
+  }
+
+  .delivery-story-content {
+    width: 80%;
+  }
+
+  .delivery-story-content {
+    margin-top: -8%;
+  }
+
+.delivery-fourth-block {
+  height: 16vh;
+}
+
+.beeDelivery {
+  margin-top: 15%;
+}
+
+.delivery-info {
+  margin-bottom: 40%;
+  margin-top: 40%;
+  width: 70%;
+  margin-right: 18%;
+}
+
+.beeDelivery img{
+  margin: 0 auto;
+  width: 64%;
+}
+
+.delivery-info-h2-p h2 {
+  font-size: 0.6rem;
+}
+
+.delivery-info-h2-p p {
+  font-size: 0.42rem;
+}
+}
+
+@media (max-width: 370px) {
+  .delivery-story-content h4 {
+    font-size: 0.4rem;
+    margin-top: 10%;
+  }
+
+  .delivery-info {
+    margin-bottom: 50%;
+  }
+
+  .home-modal {
+    width: 65vw;
+  }
+
+  .delivery-story-content {
+    margin-top: -8%;
+  }
+}
+
+@media (max-width: 340px) {
+  .delivery-info {
+    margin-bottom: 83%;
+  }
+
+  .delivery-burger img {
+    margin-right: -11%;
+  }
+
+  .delivery-story-content h3 {
+    font-size: .6rem;
+}
+.delivery-burger {
+  width: 40px;
+}
+}
