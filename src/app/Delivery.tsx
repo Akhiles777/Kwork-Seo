@@ -5,6 +5,8 @@ import BeeAnimation from '@/components/BeeAnimation';
 import '@/styles/delivery.css';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
+
 
 const position: [number, number] = [43.315713, 40.408009];
 
@@ -41,10 +43,10 @@ const Delivery = () => {
         <div className="delivery-header-content">
 
         <li className="logo-header-li"><Link href="/"  className="delivery-logo-header">
-        <img src='https://i.postimg.cc/PxtsJWs9/logohoney_1.png' alt="Logo" /></Link></li>
+        <Image src='https://i.postimg.cc/PxtsJWs9/logohoney_1.png' alt="Logo" /></Link></li>
 
           <button className="delivery-burger" onClick={() => setHomeMenuOpen(true)}>
-            <img src="https://i.postimg.cc/2jW5tjX8/burger.png" alt="menu" />
+            <Image src="https://i.postimg.cc/2jW5tjX8/burger.png" alt="menu" />
           </button>
           <div className="delivery-header-links">
           <li><Link href="/about">О нас</Link></li>
@@ -67,12 +69,12 @@ const Delivery = () => {
       </section>
 
       <div className="beeDelivery">
-        <img src="https://i.postimg.cc/VNN6Zj3y/bee_Delivery.png" alt="" />
+        <Image src="https://i.postimg.cc/VNN6Zj3y/bee_Delivery.png" alt="" />
       </div>
 
       <div className="delivery-info">
         <div className="delivery-info-up">
-          <img src="https://i.postimg.cc/kgG3kfXt/check.png" alt="" />
+          <Image src="https://i.postimg.cc/kgG3kfXt/check.png" alt="" />
           <div className="delivery-info-h2-p">
             <h2>Отправка Почтой России</h2>
             <p className='delivery-info-p'>
@@ -91,7 +93,7 @@ const Delivery = () => {
         </div>
 
         <div className="delivery-info-buttom">
-          <img src="https://i.postimg.cc/kgG3kfXt/check.png" alt="" />
+          <Image src="https://i.postimg.cc/kgG3kfXt/check.png" alt="" />
           <div className="delivery-info-h2-p">
             <h2>Самовывоз</h2>
             <p className='delivery-info-p'>

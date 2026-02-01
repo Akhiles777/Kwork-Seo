@@ -7,6 +7,7 @@ import Pagination from '@/components/Pagination';
 import Link from 'next/link';
 import products from '@/data/products';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 const Catalog = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,10 +35,10 @@ const Catalog = () => {
       <header className="catalog-header">
         <div className="catalog-header-content">
         <li className="logo-header-li"><Link href="/" className="catalog-logo-header">
-          <img src='https://i.postimg.cc/PxtsJWs9/logohoney_1.png' alt="Logo" /></Link></li>
+          <Image src='https://i.postimg.cc/PxtsJWs9/logohoney_1.png' alt="Logo" /></Link></li>
         
           <button className="catalog-burger" onClick={() => setHomeMenuOpen(true)}>
-            <img src="https://i.postimg.cc/2jW5tjX8/burger.png" alt="menu" />
+            <Image src="https://i.postimg.cc/2jW5tjX8/burger.png" alt="menu" />
           </button>
           <div className="catalog-header-links">
           <li><Link href="/about">О нас</Link></li>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react'; import Link from 'next/link'; import dynamic from 'next/dynamic'; import BeeAnimation from '@/components/BeeAnimation'; import '@/styles/about.css'; import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 const MapWithNoSSR = dynamic(() => import('@/components/MapComponent'), { ssr: false });
 
@@ -32,11 +33,11 @@ const About = () => {
       <header className="about-header">
         <div className="about-header-content">
           <Link href="/" className="about-logo-header">
-            <img src="https://i.postimg.cc/PxtsJWs9/logohoney_1.png" alt="Logo" />
+            <Image src="https://i.postimg.cc/PxtsJWs9/logohoney_1.png" alt="Logo" />
           </Link>
 
           <button className="about-burger" onClick={() => setHomeMenuOpen(true)}>
-            <img src="https://i.postimg.cc/2jW5tjX8/burger.png" alt="menu" />
+            <Image src="https://i.postimg.cc/2jW5tjX8/burger.png" alt="menu" />
           </button>
 
           <div className="about-header-links">
@@ -59,9 +60,9 @@ const About = () => {
         <div className="about-content-second-block">
           <div className="carousel">
             <div className="carousel-track">
-              <img src={images[getPrevIndex()]} className="small" alt="" onClick={() => setIndex(getPrevIndex())} />
-              <img src={images[index]} className="big" alt="" onClick={() => setIndex(getNextIndex())} />
-              <img src={images[getNextIndex()]} className="small" alt="" onClick={() => setIndex(getNextIndex())} />
+              <Image src={images[getPrevIndex()]} className="small" alt="" onClick={() => setIndex(getPrevIndex())} />
+              <Image src={images[index]} className="big" alt="" onClick={() => setIndex(getNextIndex())} />
+              <Image src={images[getNextIndex()]} className="small" alt="" onClick={() => setIndex(getNextIndex())} />
             </div>
           </div>
 
@@ -74,17 +75,17 @@ const About = () => {
 
         <div className="about-content-fifth-block">
           <div className="about-card">
-            <img src="https://i.postimg.cc/xCC0gnNj/about_Card1.png" alt="" className="aboutCard1" />
+            <Image src="https://i.postimg.cc/xCC0gnNj/about_Card1.png" alt="" className="aboutCard1" />
             <h2>Собственное производство</h2>
             <p>Более 37 лет собираем мёд на альпийских лугах Абхазии, контролируя каждый этап.</p>
           </div>
           <div className="about-card">
-            <img src="https://i.postimg.cc/HLWcDG8h/about_Card2.png" alt="" className="aboutCard1" />
+            <Image src="https://i.postimg.cc/HLWcDG8h/about_Card2.png" alt="" className="aboutCard1" />
             <h2>Гарантия качества</h2>
             <p>Альпийский мёд с высоты более 2000 м, без примесей и промышленной обработки, где растут более 300 видов лекарственных растений.</p>
           </div>
           <div className="about-card">
-            <img src="https://i.postimg.cc/yxRWXs2d/about_Card3.png" alt="" className="aboutCard1" />
+            <Image src="https://i.postimg.cc/yxRWXs2d/about_Card3.png" alt="" className="aboutCard1" />
             <h2>Натуральные продукты</h2>
             <p>Только чистый горный мёд с дикорастущих трав, сохраняющий вкус и пользу.</p>
           </div>
@@ -98,7 +99,7 @@ const About = () => {
           <div className="about-seventh-form-content">
           <p className="about-contact-h2">Контакты</p>
           <a href="tel:+79409948837" className="contact-phone-img phone-contact">
-            <img src="https://i.postimg.cc/G2QX3nXs/phone.png" className='contact-phone-image' alt="Телефон" loading="lazy" /> +7 (940) 994-88-37
+            <Image src="https://i.postimg.cc/G2QX3nXs/phone.png" className='contact-phone-image' alt="Телефон" loading="lazy" /> +7 (940) 994-88-37
           </a>
           <a
             href={`https://www.google.com/maps/dir/?api=1&destination=${position[0]},${position[1]}`}
@@ -106,7 +107,7 @@ const About = () => {
             rel="noopener noreferrer"
             className="contact-phone-img phone-contact"
           >
-            <img src="https://i.postimg.cc/m2Z0H8Mg/location.png" className='contact-location' alt="Адрес" loading="lazy" />
+            <Image src="https://i.postimg.cc/m2Z0H8Mg/location.png" className='contact-location' alt="Адрес" loading="lazy" />
             <div className="contact-address">
               <p>Республика Абхазия, Бзыбское ущелье</p>
               <p className="about-contact-address-secondP">(построить маршрут)</p>
@@ -118,7 +119,7 @@ const About = () => {
           </a>
           <div className="about-contact-links">
                   <a href="https://wa.me/79409948837" target="_blank" rel="noreferrer noopener">
-                    <img src="https://i.postimg.cc/zBjxDYxh/WA.png" alt="WhatsApp" loading="lazy" />
+                    <Image src="https://i.postimg.cc/zBjxDYxh/WA.png" alt="WhatsApp" loading="lazy" />
                   </a>
                   <a href="https://instagram.com/alpiskiy_med" className="instagram-btn" target="_blank" rel="noreferrer noopener">
                     <img src="https://i.postimg.cc/VNPcQy7b/Inst.png" alt="Instagram" loading="lazy" />
@@ -131,7 +132,7 @@ const About = () => {
   className="max-btn"
   aria-label="Скопировать номер MAX"
 >
-  <img
+  <Image
     src="https://i.postimg.cc/SK9nfNgC/max.png"
     alt="MAX"
     loading="lazy"
