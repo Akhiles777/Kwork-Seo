@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Image from 'next/image';
 import { categories } from '@/data/categories';
+import 'leaflet/dist/leaflet.css';
 
 // Ленивая загрузка тяжелых компонентов
 const BeeAnimation = dynamic(() => import('@/components/BeeAnimation'), {
