@@ -58,3 +58,37 @@ hr {
     opacity: 1;                /* убираем прозрачность */
   }
 }
+
+:root {
+
+  font-size: 18px;
+  
+
+  --line-height: 1.7;
+}
+
+
+.header-links li,
+.home-modal-list li {
+  font-size: 1.1rem !important; 
+  font-weight: 600;
+}
+
+/* Карточки товаров */
+.news-section-card-h2 {
+  font-size: 1.3rem !important; 
+  font-weight: 700;
+}
+
+.news-section-card-price {
+  font-size: 1.2rem !important; 
+  color: #d97706; 
+  font-weight: bold;
+}
+
+/* Кнопки */
+.home-link-button,
+.home-top-goods-button {
+  font-size: 1.1rem !important;
+  padding: 14px 28px !important;
+}

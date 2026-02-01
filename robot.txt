@@ -1,0 +1,56 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /*?*
+Crawl-delay: 2
+
+# Карта сайта (ОБЯЗАТЕЛЬНО укажите ваш реальный домен!)
+Sitemap: https://arshbamed.ru/sitemap.xml
+Sitemap: https://arshbamed.ru/sitemap-0.xml
+
+# Для Яндекса
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /cart/
+Disallow: /*?sort=
+Disallow: /*?filter=
+Host: arshbamed.ru
+Clean-param: ref&utm_source&utm_medium&utm_campaign /catalog/
+Clean-param: from&source /blog/
+
+# Для Google
+User-agent: Googlebot
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Disallow: /search/
+Disallow: /*?print=
+Disallow: /print/
+
+# Для Instagram/Facebook (если есть шэринг)
+User-agent: Facebot
+User-agent: Instagram
+Allow: /
+Disallow: /admin/
+
+# Для агрессивных ботов
+User-agent: MJ12bot
+User-agent: AhrefsBot
+Crawl-delay: 5
+
+# Боты, которых стоит ограничить
+User-agent: SemrushBot
+User-agent: DotBot
+User-agent: MegaIndex
+Disallow: /
+
+# Дополнительная информация
+# Контакт для поисковых систем
+# Visit-time: 0600-1800
+# Request-rate: 1/10
+
+# Комментарий: Дом мёда Абхазии - продажа натурального абхазского мёда
+# Последнее обновление: 2026-02-01

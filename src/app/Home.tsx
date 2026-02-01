@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image'
 
 const cards = [
   {
@@ -73,7 +74,7 @@ const Home = () => {
       <header className="home-header">
         <div className="home-header-content">
         <li className="logo-header-li"><Link href="/" className="logo-header">
-        <img src="https://i.postimg.cc/PxtsJWs9/logohoney_1.png" alt="Логотип Дом мёда Абхазии" loading="lazy" /></Link></li>
+        <Image src="https://i.postimg.cc/PxtsJWs9/logohoney_1.png" alt="Логотип Дом мёда Абхазии" loading="lazy" /></Link></li>
 
           <button className="home-burger" onClick={() => setHomeMenuOpen(true)}>
             <img src="https://i.postimg.cc/2jW5tjX8/burger.png" alt="Меню" loading="lazy" />
@@ -106,7 +107,7 @@ const Home = () => {
             <div className="home-categories-grid">
   {categories.map((cat, index) => (
     <div key={index} className={`home-category-card ${cat.className}`}>
-      <img src={cat.img} alt={cat.altText} className="category-img" />
+      <Image src={cat.img} alt={cat.altText} className="category-img" />
     </div>
   ))}
 </div>
@@ -151,7 +152,7 @@ const Home = () => {
             <div className="top-section-cards">
               {cards.map((card, i) => (
                 <div className="news-section-card" key={i}>
-                  <img
+                  <Image
                     src={card.img}
                     className="top-bank-img"
                     alt={card.title}
@@ -196,7 +197,7 @@ const Home = () => {
 
               <ul className="home-fifth-block-text-ul">
                 <li className="home-fifth-block-text-li">
-                  <img src="https://i.postimg.cc/kgG3kfXt/check.png" className="home-third-li-icon" alt="Иконка проверки" />
+                  <Image src="https://i.postimg.cc/kgG3kfXt/check.png" className="home-third-li-icon" alt="Иконка проверки" />
                   <p>Свои пасеки и пчёлы под заботой</p>
                 </li>
                 <li className="home-fifth-block-text-li">
@@ -204,7 +205,7 @@ const Home = () => {
                   <p>Мёд из экологически чистых мест</p>
                 </li>
                 <li className="home-fifth-block-text-li">
-                  <img src="https://i.postimg.cc/kgG3kfXt/check.png" className="home-third-li-icon" alt="Иконка проверки" />
+                  <Image src="https://i.postimg.cc/kgG3kfXt/check.png" className="home-third-li-icon" alt="Иконка проверки" />
                   <p>Прямые поставки - от улья до вашего дома</p>
                 </li>
                 <li className="home-fifth-block-text-li">
@@ -235,22 +236,22 @@ const Home = () => {
             rel="noopener noreferrer"
             className="contact-phone-img phone-contact"
           >
-            <img src="https://i.postimg.cc/m2Z0H8Mg/location.png" className='contact-location' alt="Адрес" loading="lazy" />
+            <Image src="https://i.postimg.cc/m2Z0H8Mg/location.png" className='contact-location' alt="Адрес" loading="lazy" />
             <div className="contact-address">
               <p>Республика Абхазия, Бзыбское ущелье</p>
               <p className="contact-address-secondP">(построить маршрут)</p>
             </div>
           </a>
           <a href="mailto:arshba27@mail.ru" className="contact-phone-img phone-contact">
-            <img src="https://i.postimg.cc/XJwTwPQd/gmail.png" className='contact-phone-image' alt="Электронная почта" loading="lazy" />
+            <Image src="https://i.postimg.cc/XJwTwPQd/gmail.png" className='contact-phone-image' alt="Электронная почта" loading="lazy" />
             arshba27@mail.ru
           </a>
           <div className="contact-links">
                   <a href="https://wa.me/79409948837" target="_blank" rel="noreferrer noopener">
-                    <img src="https://i.postimg.cc/zBjxDYxh/WA.png" alt="WhatsApp" loading="lazy" />
+                    <Image src="https://i.postimg.cc/zBjxDYxh/WA.png" alt="WhatsApp" loading="lazy" />
                   </a>
                   <a href="https://instagram.com/alpiskiy_med" className="instagram-btn" target="_blank" rel="noreferrer noopener">
-                    <img src="https://i.postimg.cc/VNPcQy7b/Inst.png" alt="Instagram" loading="lazy" />
+                    <Image src="https://i.postimg.cc/VNPcQy7b/Inst.png" alt="Instagram" loading="lazy" />
                   </a>
 
                   <button
@@ -261,7 +262,7 @@ const Home = () => {
   className="max-btn"
   aria-label="Скопировать номер MAX"
 >
-  <img
+  <Image
     src="https://i.postimg.cc/SK9nfNgC/max.png"
     alt="MAX"
     loading="lazy"
