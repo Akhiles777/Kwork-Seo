@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         alt: "Доставка и оплата мёда из Абхазии",
       },
     ],
-    type: "website",
+    type: "website"
   },
   robots: {
     index: true,
