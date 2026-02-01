@@ -143,7 +143,7 @@ const Home = () => {
 
           <section className="top-section">
           <h1 className="top-section-h2">
-  Мёд из Абхазии –&nbsp;
+ Мед из Абхазии –&nbsp;
   <span className="top-section-second-span">
     горный, экологически чистый, без добавок
   </span>
