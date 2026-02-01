@@ -528,7 +528,7 @@ const Home = () => {
                   <li><Link href="/catalog" onClick={() => setHomeMenuOpen(false)}>Каталог</Link></li>
                   <li><Link href="/delivery" onClick={() => setHomeMenuOpen(false)}>Доставка и оплата</Link></li>
                   <li>
-                    <button onClick={scrollToContacts}>Контакты</button>
+                    <button onClick={scrollToContacts}>Контактыc</button>
                   </li>
                 </ul>
               </nav>
