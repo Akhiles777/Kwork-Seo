@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import "@/styles/beeAnimation.css";
+import Image from "next/image";
 
 const BeeAnimation = () => {
   const beeRef = useRef<HTMLImageElement | null>(null);
@@ -54,7 +55,7 @@ const BeeAnimation = () => {
   }, []);
 
   return (
-    <img
+    <Image
       ref={beeRef}
       src="https://i.postimg.cc/0QMNP9kH/beefly_(1).png"
       alt="bee"
